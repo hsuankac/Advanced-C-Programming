@@ -1,16 +1,21 @@
 dynamic library:
-    one step:
+    step one, build the shared library:
     gcc -g -fPIC main.c -shared -o libStringFunctions.dll
 
-    two steps:
-    1. gcc -I ../libStringFunctions -c main.c -o main.one
+    step two, build the exe file:
+    1. gcc -I ../libStringFunctions -c main.c -o main.o
     2. gcc -o main.exe main.o -L../libStringFunctions -l libStringFunctions
 
     might need to add the dll library into PATH variable
 
 static library:
+    step one, build the static library:
     1. gcc -c main.c -o lib_StringFunctions.o
     2. ar rcs libStringFunctions.a lib_StringFunctions.o
+
+    step two, build the exe file:
+    1. gcc -I ../library -c main.c -o main.o
+    2. gcc -o main.exe main.o ../library.a 
 
 dynamic loading:
     using dlfcn.h file in cygwin gcc, like dlopen, dlsym, dlerror, and dlclose function
