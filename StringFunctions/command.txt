@@ -14,5 +14,5 @@ static library:
 
 dynamic loading:
     using dlfcn.h file in cygwin gcc, like dlopen, dlsym, dlerror, and dlclose function
-    gcc -0 main.exe main.c -ldl
+    gcc -o main.exe main.c -ldl
 
