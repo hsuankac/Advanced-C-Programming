@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1727980232 source:c:\learning\advanced-c-programming\interporcess_comm_signals\challenge\main.c
+	<stdio.h>
+	<stdlib.h>
+	<unistd.h>
+	<time.h>
+	<string.h>
+	<errno.h>
+	<signal.h>
+

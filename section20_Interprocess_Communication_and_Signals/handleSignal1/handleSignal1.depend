@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1727907760 source:c:\learning\advanced-c-programming\handlesignal1\main.c
+	<stdio.h>
+	<stdlib.h>
+	<signal.h>
+
